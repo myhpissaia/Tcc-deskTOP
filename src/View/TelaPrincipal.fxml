@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaPrincipalController">
+   <children>
+      <Button fx:id="btCadastro" layoutX="28.0" layoutY="341.0" text="Cadastro" />
+      <Button fx:id="btLogin" layoutX="119.0" layoutY="341.0" text="Login" />
+      <Button fx:id="btVoltar" layoutX="491.0" layoutY="341.0" mnemonicParsing="false" text="Voltar" />
+      <Label layoutX="46.0" layoutY="62.0" text="Nome da ONG">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

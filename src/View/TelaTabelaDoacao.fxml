@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaTabelaDoacaoController">
+   <children>
+      <TableView fx:id="tabela" layoutX="31.0" layoutY="26.0" prefHeight="276.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="clnNome" prefWidth="112.0" text="Nome" />
+          <TableColumn fx:id="clnSobrenome" prefWidth="121.0" text="Sobrenome" />
+            <TableColumn fx:id="clnEmail" prefWidth="158.0" text="Email/telefone " />
+            <TableColumn fx:id="clnDoacao" prefWidth="147.0" text="Doação" />
+        </columns>
+      </TableView>
+      <Button fx:id="btVoltar" layoutX="31.0" layoutY="355.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>

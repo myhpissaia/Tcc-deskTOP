@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaCadastroOngController">
+   <children>
+      <Label layoutX="43.0" layoutY="47.0" text="Nome:" />
+      <Label layoutX="42.0" layoutY="81.0" text="Endereço:" />
+      <Label layoutX="40.0" layoutY="115.0" text="Cidade:" />
+      <Label layoutX="41.0" layoutY="152.0" text="Estado:" />
+      <Label layoutX="41.0" layoutY="185.0" text="CNPJ:" />
+      <TextField fx:id="txNome" layoutX="132.0" layoutY="44.0" prefHeight="25.0" prefWidth="373.0" promptText="Informe o nome da ONG" />
+      <TextField fx:id="txEndereco" layoutX="131.0" layoutY="77.0" prefHeight="25.0" prefWidth="373.0" promptText="Informe o Endereço" />
+      <TextField fx:id="txCidade" layoutX="134.0" layoutY="111.0" prefHeight="25.0" prefWidth="283.0" promptText="Informe a Cidade" />
+      <TextField fx:id="txEstado" layoutX="137.0" layoutY="148.0" prefHeight="25.0" prefWidth="283.0" promptText="Informe o Estado" />
+      <TextField fx:id="txCNPJ" layoutX="138.0" layoutY="181.0" prefHeight="25.0" prefWidth="200.0" promptText="Informe seu CNPJ" />
+      <TextField fx:id="txEmail" layoutX="139.0" layoutY="224.0" prefHeight="25.0" prefWidth="373.0" promptText="Informe seu endereço de Email" />
+      <TextField fx:id="txLogin" layoutX="139.0" layoutY="262.0" prefHeight="25.0" prefWidth="263.0" promptText="Inserir Login" />
+      <PasswordField fx:id="senha" layoutX="139.0" layoutY="295.0" prefHeight="25.0" prefWidth="263.0" promptText="Inserir Senha" />
+      <PasswordField fx:id="conSenha" layoutX="139.0" layoutY="329.0" prefHeight="25.0" prefWidth="263.0" promptText="Confirme sua senha " />
+      <Label layoutX="40.0" layoutY="470.0" text="Necessidades:" />
+      <CheckBox fx:id="alimento" layoutX="131.0" layoutY="487.0" mnemonicParsing="false" text="Alimentos" />
+      <CheckBox fx:id="brinquedo" layoutX="131.0" layoutY="519.0" mnemonicParsing="false" text="Brinquedos" />
+      <CheckBox fx:id="roupas" layoutX="131.0" layoutY="548.0" mnemonicParsing="false" text="Roupas" />
+      <CheckBox fx:id="higiene" layoutX="131.0" layoutY="575.0" mnemonicParsing="false" text="Higiene" />
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="188.0" layoutX="569.0" layoutY="86.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/semImagem.png" />
+         </image></ImageView>
+      <TextArea fx:id="txDescricaoOng" layoutX="553.0" layoutY="334.0" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+      <Button fx:id="btVoltar" layoutX="26.0" layoutY="628.0" mnemonicParsing="false" text="Voltar" />
+      <Button fx:id="btCadastro" layoutX="669.0" layoutY="628.0" mnemonicParsing="false" text="Salvar" />
+      <Label layoutX="552.0" layoutY="307.0" prefHeight="17.0" prefWidth="61.0" text="Descrição:" />
+      <Label fx:id="lEmail" layoutX="41.0" layoutY="228.0" text="Email:" />
+      <Label layoutX="569.0" layoutY="56.0" text="Foto:" />
+      <Label fx:id="lEmail1" layoutX="41.0" layoutY="266.0" text="Login:" />
+      <Label fx:id="lEmail11" layoutX="42.0" layoutY="299.0" text="Senha:" />
+      <Label fx:id="lEmail12" layoutX="41.0" layoutY="333.0" text="Confimar senha:" />
+      <Button fx:id="btDeletar" layoutX="701.0" layoutY="254.0" mnemonicParsing="false" text="Deletar" />
+   </children>
+</AnchorPane>

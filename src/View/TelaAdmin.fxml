@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.TelaAdminController">
+   <children>
+      <Button fx:id="btTPessoa" layoutX="78.0" layoutY="67.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="148.0" text="Tabela Pessoa" />
+      <Button fx:id="btTOng" layoutX="78.0" layoutY="181.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="148.0" text="Tabela Ong" />
+      <Button fx:id="btGDoa" layoutX="283.0" layoutY="67.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="148.0" text="Gráfico Doações" />
+      <Button fx:id="btGDoaM" layoutX="283.0" layoutY="181.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="148.0" text="Grafico doações mensais" />
+      <Button fx:id="btVoltar" layoutX="26.0" layoutY="361.0" mnemonicParsing="false" text="Voltar" />
+      <Button fx:id="btFotos" layoutX="283.0" layoutY="276.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="148.0" text="Fotos" />
+   </children>
+</AnchorPane>

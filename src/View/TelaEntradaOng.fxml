@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="373.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.TelaEntradaOngController">
+     <children>
+      <Button fx:id="btDoa" layoutX="138.0" layoutY="107.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="110.0" text="Doações" />
+      <Button fx:id="btGrafico" layoutX="138.0" layoutY="225.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="110.0" text="Gráficos" />
+      <Button fx:id="btVoltar" layoutX="14.0" layoutY="363.0" mnemonicParsing="false" text="Voltar" />
+   </children>
+</AnchorPane>
