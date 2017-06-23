@@ -65,7 +65,7 @@ public class TelaTabelaOngController implements Initializable {
     private TextField txPesquisa;
 
     @FXML
-    private Button btAlterar, btDeleta, btPesquisa, btAtualiza, btPdf;
+    private Button btAlterar, btDeleta, btAtualiza, btPdf,btVoltar;
 
     @FXML
     private Label roupa;
@@ -119,10 +119,10 @@ public class TelaTabelaOngController implements Initializable {
                 gerarpdf();
             }
         });
-        img.setOnMouseClicked((MouseEvent e) -> {
+        btVoltar.setOnMouseClicked((MouseEvent e) -> {
             volte();
         });
-        img.setOnKeyPressed((KeyEvent evt) -> {
+        btVoltar.setOnKeyPressed((KeyEvent evt) -> {
             if (evt.getCode() == KeyCode.ENTER) {
                 volte();
             }

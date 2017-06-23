@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="373.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.TelaEntradaOngController">
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaEntradaOngController">
      <children>
-      <Button fx:id="btDoa" layoutX="138.0" layoutY="107.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="110.0" text="Doações" />
-      <Button fx:id="btGrafico" layoutX="138.0" layoutY="225.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="110.0" text="Gráficos" />
-      <Button fx:id="btVoltar" layoutX="14.0" layoutY="363.0" mnemonicParsing="false" text="Voltar" />
+      <ImageView fitHeight="402.0" fitWidth="373.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/gradiente-azul-claro-fundo%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btDoa" layoutX="138.0" layoutY="107.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="110.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Doações" textFill="WHITE" />
+      <Button fx:id="btGrafico" layoutX="138.0" layoutY="225.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="110.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Gráficos" textFill="WHITE" />
+      <Button fx:id="btVoltar" layoutX="14.0" layoutY="363.0" mnemonicParsing="false" style="-fx-border-color: #4682B4; -fx-background-color: #4682B4;" text="Voltar" textFill="WHITE" />
+      <ImageView fitHeight="110.0" fitWidth="50.0" layoutX="309.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/globe-304586_960_720.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

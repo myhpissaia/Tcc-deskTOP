@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import static javafx.application.Application.launch;
+import javafx.scene.image.Image;
 
 /**
  *
@@ -27,6 +28,7 @@ public class TelaCadastroOng  extends Application {
         
         Scene scene = new Scene(root);
         stage.setTitle("ONG");
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
         stage.setScene(scene);
         stage.show();
         TelaCadastroOng.stage = stage;

@@ -9,7 +9,7 @@ import java.util.InputMismatchException;
 
 /**
  *
- * @author Aluno
+ * @author  <Leticia e Mylena>
  */
 public class validacaoCNPJ {
     

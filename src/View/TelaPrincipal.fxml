@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,15 +8,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #4682B4; -fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaPrincipalController">
    <children>
-      <Button fx:id="btCadastro" layoutX="28.0" layoutY="341.0" text="Cadastro" />
-      <Button fx:id="btLogin" layoutX="119.0" layoutY="341.0" text="Login" />
-      <Button fx:id="btVoltar" layoutX="491.0" layoutY="341.0" mnemonicParsing="false" text="Voltar" />
-      <Label layoutX="46.0" layoutY="62.0" text="Nome da ONG">
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/gradiente-azul-claro-fundo%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btCadastro" layoutX="44.0" layoutY="341.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Cadastro" textFill="WHITE" />
+      <Button fx:id="btLogin" layoutX="144.0" layoutY="341.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Login" textFill="WHITE" />
+      <Button fx:id="btVoltar" layoutX="491.0" layoutY="341.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="48.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Sair" textFill="WHITE" />
+      <Label layoutX="47.0" layoutY="35.0" text="Donate Solidarity" textFill="STEELBLUE">
          <font>
-            <Font size="22.0" />
+            <Font name="Cambria" size="36.0" />
          </font>
       </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/globe-304586_960_720.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

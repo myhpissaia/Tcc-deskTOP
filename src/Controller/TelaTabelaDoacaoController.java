@@ -21,39 +21,41 @@ import javafx.scene.control.cell.PropertyValueFactory;
  *
  * @author <Leticia e Mylena >
  */
-/*public class TelaTabelaDoacaoController implements Initializable {
+public class TelaTabelaDoacaoController implements Initializable {
+
+    /*@FXML 
+     private Button btVoltar;
     
-    @FXML 
-    private Button btVoltar;
+     @FXML 
+     private TableView<Doacao> tabela;
     
-    @FXML 
-    private TableView<Doacao> tabela;
+     @FXML 
+     private TableColumn<Doacao, String> clnNome;
     
-    @FXML 
-    private TableColumn<Doacao, String> clnNome;
+     @FXML 
+     private TableColumn<Doacao, String> clnSobrenome;
     
-    @FXML 
-    private TableColumn<Doacao, String> clnSobrenome;
+     @FXML 
+     private TableColumn<Doacao, String> clnEmail;
     
-    @FXML 
-    private TableColumn<Doacao, String> clnEmail;
+     @FXML 
+     private TableColumn<Doacao, String> clnDoacao;
     
-    @FXML 
-    private TableColumn<Doacao, String> clnDoacao;
+     private static Doacao selecionada;
     
-    private static Doacao selecionada;
-    
-    
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        clnNome.setCellValueFactory(new PropertyValueFactory("nome"));
-        clnSobrenome.setCellValueFactory(new PropertyValueFactory("sobrenome"));
-        clnDoacao.setCellValueFactory(new PropertyValueFactory("doacao"));
-        tabela.setItems(atualizaTabela());
-    }    
-    public ObservableList<Doacao> atualizaTabela(){
-        DoacaoDAO dao = new DoacaoDAO();
-        return FXCollections.observableArrayList(dao.getDica());
+      /*  clnNome.setCellValueFactory(new PropertyValueFactory("nome"));
+         clnSobrenome.setCellValueFactory(new PropertyValueFactory("sobrenome"));
+         clnDoacao.setCellValueFactory(new PropertyValueFactory("doacao"));
+         tabela.setItems(atualizaTabela());
+         }    
+         public ObservableList<Doacao> atualizaTabela(){
+         DoacaoDAO dao = new DoacaoDAO();
+         return FXCollections.observableArrayList(dao.getDica());
+         }
+         }*/
+    }
 }
-}*/

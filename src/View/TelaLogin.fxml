@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="378.0" style="-fx-border-color: #000000; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaLoginController">
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="378.0" style="-fx-border-color: #4682B4; -fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaLoginController">
    <children>
-      <TextField fx:id="txLogin" layoutX="115.0" layoutY="102.0" promptText="Usuário" style="-fx-border-color: #000000;" />
-      <PasswordField fx:id="psSenha" layoutX="115.0" layoutY="160.0" promptText="Senha" style="-fx-border-color: #000000;" />
-      <Button fx:id="btLogin" layoutX="212.0" layoutY="264.0" mnemonicParsing="false" style="-fx-border-color: #000000; -fx-background-color: #ffffff;" text="Login" />
-      <Button fx:id="btSair" layoutX="115.0" layoutY="264.0" mnemonicParsing="false" style="-fx-border-color: #000000; -fx-background-color: #ffffff;" text="Voltar" />
+      <ImageView fitHeight="344.0" fitWidth="377.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../Imagens/gradiente-azul-claro-fundo%20(1).jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txLogin" layoutX="115.0" layoutY="102.0" promptText="Usuário" style="-fx-border-color: #4682B4;" />
+      <PasswordField fx:id="psSenha" layoutX="115.0" layoutY="160.0" promptText="Senha" style="-fx-border-color: #4682B4;" />
+      <Button fx:id="btLogin" layoutX="212.0" layoutY="264.0" mnemonicParsing="false" style="-fx-border-color: #4682B4; -fx-background-color: #4682B4;" text="Login" textFill="WHITE" />
+      <Button fx:id="btSair" layoutX="115.0" layoutY="264.0" mnemonicParsing="false" style="-fx-border-color: #4682B4; -fx-background-color: #4682B4;" text="Voltar" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="48.0" text="Login" textFill="STEELBLUE">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

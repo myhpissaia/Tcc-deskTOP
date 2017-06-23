@@ -40,6 +40,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Border;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -82,8 +83,8 @@ public class TelaCadastroOngController implements Initializable {
             ong.setCnpj(txCNPJ.getText());
             ong.setEmail(txEmail.getText());
             ong.setLogin(txLogin.getText());
-            ong.setSenha(senha.getText());
-            ong.setConSenha(conSenha.getText());
+            ong.setSenha(Criptografia.criptografar(senha.getText()));
+            ong.setConSenha(Criptografia.criptografar(conSenha.getText()));
             ong.setDescricao(txDescricaoOng.getText());
             ong.setNecAlimento(alimento.isSelected());
             ong.setNecBrinquedo(brinquedo.isSelected());
@@ -107,6 +108,10 @@ public class TelaCadastroOngController implements Initializable {
                     foi.showAndWait();
 
                     TelaCadastroOng.getStage().close();
+
+//                    String s = Criptografia.criptografar(senha.getText());
+//                    ong.setSenha(s);
+
                     BD.getOng().add(ong);
                     TelaCadastroOng.getStage().close();
                     prin.start(new Stage());
@@ -225,16 +230,7 @@ public class TelaCadastroOngController implements Initializable {
                 Logger.getLogger(TelaCadastroOngController.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-    }
-
-    public void blockNum() {//nao permite letra na teste field
-        String t = txCNPJ.getText().replaceAll("[a-zA-Z\\á-ýÁ-Ý\\s\\-\\,\\*\\/\\=\\("
-                + "\\)\\&\\¨\\%\\$\\#\\@\\!\\¹\\²\\³\\£\\¢\\¬\\'\\§\\_\\ª\\[\\]"
-                + "\\º\\;\\:\\?\\~\\^\\ã-õÃ-Õ\\+\\|\\\\´\\`]", "");
-
-        txCNPJ.setText(t);
-        txCNPJ.end();
-    }
+    }//lembrete placar 995 acançar
 
     public void validaCheckBox() {
         if (alimento.isSelected()) {
@@ -366,12 +362,3 @@ public class TelaCadastroOngController implements Initializable {
     }
 
 }
-/*@FXML
- public void blockTamanho() {
- String t = tfTamanho.getText().replaceAll("[a-zA-Z\\á-ýÁ-Ý\\s\\-\\,\\*\\/\\=\\("
- + "\\)\\&\\¨\\%\\$\\#\\@\\!\\¹\\²\\³\\£\\¢\\¬\\'\\§\\_\\ª\\[\\]"
- + "\\º\\;\\:\\?\\~\\^\\ã-õÃ-Õ\\+\\|\\\\´\\`]", "");
-
- tfTamanho.setText(t);
- tfTamanho.end();
- }*/

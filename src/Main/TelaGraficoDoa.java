@@ -10,6 +10,7 @@ import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -23,10 +24,11 @@ public class TelaGraficoDoa  extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/TelaGraficoDoa.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/TelaGraficoDoacao.fxml"));
         
         Scene scene = new Scene(root);
-        stage.setTitle("Cadastro Ong");
+        stage.setTitle("Cadastro da Ong");
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
         stage.setScene(scene);
         stage.show();
         TelaGraficoDoa.stage = stage;

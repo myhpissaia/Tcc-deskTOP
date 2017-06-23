@@ -9,6 +9,7 @@ import java.security.MessageDigest;
 
 import java.security.NoSuchAlgorithmException;
 
+
 public class Criptografia {
 
     private static MessageDigest md = null;//Método para geração do algoritmo

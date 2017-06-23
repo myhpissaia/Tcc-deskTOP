@@ -14,14 +14,17 @@ import java.sql.SQLException;
  * @author <Leticia e Mylena>
  */
 public class ConnectionFactory {
+
+    String usuario = "postgres";
+    String senha = "aluno";
+    String nomeBanco = "Tcc";
+    String enderecoServer = "localhost";
+
     public Connection getConnection() {
-        String usuario = "postgres";
-        String senha = "aluno";
-        String nomeBanco = "Tcc";
-        String enderecoServer = "localhost";
+
         try {
-                return DriverManager.getConnection("jdbc:postgresql://localhost/Tcc",
-                    "postgres", "aluno");
+            return DriverManager.getConnection("jdbc:postgresql://" + enderecoServer + "/" + nomeBanco,
+                    usuario, senha);
 
         } catch (SQLException e) {
             System.err.println("ERRO!Conexão não aconteceu");
@@ -29,4 +32,5 @@ public class ConnectionFactory {
         }
 
     }
+
 }
