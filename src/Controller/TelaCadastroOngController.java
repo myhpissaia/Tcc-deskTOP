@@ -11,6 +11,7 @@ import Main.TelaLogin;
 import Main.TelaCadastroOng;
 import Main.TelaPrincipal;
 import Model.Criptografia;
+import Model.Imagem;
 import Model.Ong;
 import Model.Usuario;
 import Model.validacaoCNPJ;
@@ -90,7 +91,11 @@ public class TelaCadastroOngController implements Initializable {
             ong.setNecBrinquedo(brinquedo.isSelected());
             ong.setNecRoupa(roupas.isSelected());
             ong.setNecHigiene(higiene.isSelected());
-            ong.setFoto(caminho);
+            
+            Imagem imagem = new Imagem();
+            String novoCaminho = imagem.atualizaCaminho(caminho, txEmail.getText());
+            
+            ong.setFoto(novoCaminho);
 
             OngDAO cadastro = new OngDAO();
             cadastro.insereOng(ong);
@@ -223,6 +228,7 @@ public class TelaCadastroOngController implements Initializable {
                 y++;
             }
         }
+        
         if (y == 0) {
             try {
                 validarCnpj();

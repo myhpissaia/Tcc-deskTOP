@@ -15,11 +15,11 @@ import javafx.stage.Stage;
 /**
  *
  * @author <Leticia e Mylena>
- * 
+ *
  */
 public class TelaTabelaOng extends Application {
 
-  private static Stage stage;
+    private static Stage stage;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -27,7 +27,7 @@ public class TelaTabelaOng extends Application {
 
         Scene scene = new Scene(root);
         stage.setTitle("Tabela Ong");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1_1.png")));
         stage.setScene(scene);
         stage.show();
         TelaTabelaOng.stage = stage;

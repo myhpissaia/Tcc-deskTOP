@@ -26,7 +26,7 @@ public class TelaLogin extends Application {
 
         Scene scene = new Scene(root);
         stage.setTitle("Login");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1_1.png")));
         stage.setScene(scene);
         stage.show();
         TelaLogin.stage = stage;

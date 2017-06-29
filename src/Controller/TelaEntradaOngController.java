@@ -65,15 +65,7 @@ public class TelaEntradaOngController implements Initializable {
         });
         btVoltar.setOnMouseClicked((MouseEvent e) -> {
             sair() ;
-        });/*
-          btVoltar.setOnKeyPressed((KeyEvent evt) -> { //mouse 
-            if (evt.getCode() == KeyCode.ENTER) {
-                entrar();
-            }
         });
-        btVoltar.setOnMouseClicked((MouseEvent e) -> {
-            entrar();
-        });*/
     }
 
 }

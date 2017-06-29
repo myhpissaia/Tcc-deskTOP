@@ -9,6 +9,7 @@ import Main.TelaAdmin;
 import Main.TelaCadastroOng;
 import Main.TelaFotos;
 import Main.TelaGraficoDoa;
+import Main.TelaTabelaPessoa;
 import Main.TelaPrincipal;
 import Main.TelaTabelaOng;
 import java.net.URL;
@@ -40,6 +41,17 @@ public class TelaAdminController implements Initializable {
             principal.start(new Stage());
         } catch (Exception ex) {
             Logger.getLogger(TelaPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void tabelaPessoa() {
+        TelaTabelaPessoa pessoa = new TelaTabelaPessoa();
+        TelaAdmin.getStage().close();
+        try {
+            pessoa.start(new Stage());
+        } catch (Exception ex) {
+            Logger.getLogger(TelaPrincipalController.class.getName()).log(Level.SEVERE, null, ex);
+
         }
     }
 
@@ -77,7 +89,7 @@ public class TelaAdminController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
-        btVoltar.setOnKeyPressed((KeyEvent evt) -> { //mouse 
+        btVoltar.setOnKeyPressed((KeyEvent evt) -> {
             if (evt.getCode() == KeyCode.ENTER) {
                 sair();
             }
@@ -85,7 +97,7 @@ public class TelaAdminController implements Initializable {
         btVoltar.setOnMouseClicked((MouseEvent e) -> {
             sair();
         });
-        btTOng.setOnKeyPressed((KeyEvent evt) -> { //mouse 
+        btTOng.setOnKeyPressed((KeyEvent evt) -> {
             if (evt.getCode() == KeyCode.ENTER) {
                 tabelaOng();
             }
@@ -93,7 +105,7 @@ public class TelaAdminController implements Initializable {
         btTOng.setOnMouseClicked((MouseEvent e) -> {
             tabelaOng();
         });
-        btFotos.setOnKeyPressed((KeyEvent evt) -> { //mouse 
+        btFotos.setOnKeyPressed((KeyEvent evt) -> {
             if (evt.getCode() == KeyCode.ENTER) {
                 fotos();
             }
@@ -101,13 +113,21 @@ public class TelaAdminController implements Initializable {
         btFotos.setOnMouseClicked((MouseEvent e) -> {
             fotos();
         });
-        btGDoa.setOnKeyPressed((KeyEvent evt) -> { //mouse 
+        btGDoa.setOnKeyPressed((KeyEvent evt) -> {
             if (evt.getCode() == KeyCode.ENTER) {
                 grafico();
             }
         });
         btGDoa.setOnMouseClicked((MouseEvent e) -> {
             grafico();
+        });
+        btTPessoa.setOnKeyPressed((KeyEvent evt) -> {
+            if (evt.getCode() == KeyCode.ENTER) {
+                tabelaPessoa();
+            }
+        });
+        btTPessoa.setOnMouseClicked((MouseEvent e) -> {
+            tabelaPessoa();
         });
     }
 

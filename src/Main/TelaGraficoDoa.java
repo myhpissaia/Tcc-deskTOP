@@ -17,18 +17,17 @@ import javafx.stage.Stage;
  *
  * @author Aluno
  */
-public class TelaGraficoDoa  extends Application { 
+public class TelaGraficoDoa extends Application {
+
     private static Stage stage;
-    
-  
 
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/View/TelaGraficoDoacao.fxml"));
-        
+
         Scene scene = new Scene(root);
         stage.setTitle("Cadastro da Ong");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1_1.png")));
         stage.setScene(scene);
         stage.show();
         TelaGraficoDoa.stage = stage;
@@ -40,9 +39,11 @@ public class TelaGraficoDoa  extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-        public static Stage getStage() {
+
+    public static Stage getStage() {
         return TelaGraficoDoa.stage;
     }
+
     public void setStage(Stage s) {
         TelaGraficoDoa.stage = s;
     }

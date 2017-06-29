@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaAdminController">
+    <children>
+      <ImageView fitHeight="400.0" fitWidth="652.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@Imagens/gradiente-azul-claro-fundo%20(1).jpg" />
+         </image>
+      </ImageView>
+      <TableView layoutX="39.0" layoutY="21.0" prefHeight="328.0" prefWidth="574.0" style="-fx-border-color: #4682B4;">
+        <columns>
+          <TableColumn fx:id="clnId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="clnNome" prefWidth="130.0" text="Nome" />
+            <TableColumn fx:id="clnSobrenome" prefWidth="139.0" text="Sobrenome" />
+            <TableColumn fx:id="clnEmail" prefWidth="229.0" text="E-mail" />
+        </columns>
+      </TableView>
+      <Button fx:id="btVoltar" layoutX="39.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Voltar" textFill="WHITE" />
+   </children>
+</AnchorPane>

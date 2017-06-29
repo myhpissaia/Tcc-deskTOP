@@ -17,20 +17,20 @@ import javafx.stage.Stage;
  *
  * @author <Leticia e Mylena>
  */
-public class TelaOng extends Application {
+public class TelaTabelaDoacao extends Application {
 
     private static Stage stage;
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/TelaEntradaOng.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/TelaTabelaDoacao.fxml"));
 
         Scene scene = new Scene(root);
-        stage.setTitle("Tela Ong");
+        stage.setTitle(" Tabela Doacao");
         stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1_1.png")));
         stage.setScene(scene);
         stage.show();
-        TelaOng.stage = stage;
+        TelaTabelaDoacao.stage = stage;
     }
 
     /**
@@ -41,10 +41,10 @@ public class TelaOng extends Application {
     }
 
     public static Stage getStage() {
-        return TelaOng.stage;
+        return TelaTabelaDoacao.stage;
     }
 
     public void setStage(Stage s) {
-        TelaOng.stage = s;
+        TelaTabelaDoacao.stage = s;
     }
 }
