@@ -27,7 +27,7 @@ public class TelaTabelaPessoa extends Application {
 
         Scene scene = new Scene(root);
         stage.setTitle("Tabela Pessoa");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1_1.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
         stage.setScene(scene);
         stage.show();
         TelaTabelaPessoa.stage = stage;
@@ -48,5 +48,3 @@ public class TelaTabelaPessoa extends Application {
         TelaTabelaPessoa.stage = s;
     }
 }
-    
-

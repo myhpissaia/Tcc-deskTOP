@@ -22,7 +22,7 @@
       <Button fx:id="btFotos" layoutX="283.0" layoutY="276.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="148.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Fotos" textFill="WHITE" />
       <ImageView fitHeight="55.0" fitWidth="50.0" layoutX="446.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Imagens/globe-304586_960_720.png" />
+            <Image url="@../Imagens/foto1.png" />
          </image>
       </ImageView>
    </children>

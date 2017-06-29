@@ -17,18 +17,17 @@ import javafx.stage.Stage;
  *
  * @author  <Leticia e Mylena>
  */
-public class TelaFotos extends Application { 
+public class TelaFotos extends Application {
+
     private static Stage stage;
-    
-  
 
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/View/TelaFotos.fxml"));
-        
+
         Scene scene = new Scene(root);
         stage.setTitle("Fotos");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1_1.png")));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
         stage.setScene(scene);
         stage.show();
         TelaFotos.stage = stage;
@@ -40,9 +39,11 @@ public class TelaFotos extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-        public static Stage getStage() {
+
+    public static Stage getStage() {
         return TelaFotos.stage;
     }
+
     public void setStage(Stage s) {
         TelaFotos.stage = s;
     }

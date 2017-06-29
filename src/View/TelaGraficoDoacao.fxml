@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.chart.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,9 +8,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaGraficoDoacaoController">
+<AnchorPane id="AnchorPane" prefHeight="422.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaGraficoDoacaoController">
     <children>
-        <PieChart fx:id="grafico" layoutX="94.0" layoutY="17.0" prefHeight="366.0" prefWidth="492.0" />
-        <Button fx:id="btVoltar" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Voltar" textFill="WHITE" />
+        <PieChart fx:id="grafico" layoutX="56.0" layoutY="14.0" prefHeight="366.0" prefWidth="492.0" />
+        <Button fx:id="btVoltar" layoutX="14.0" layoutY="380.0" mnemonicParsing="false" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Voltar" textFill="WHITE" />
+      <ImageView fitHeight="57.0" fitWidth="50.0" layoutX="553.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/foto1.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

@@ -18,14 +18,14 @@
       <Button fx:id="btCadastro" layoutX="44.0" layoutY="341.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Cadastro" textFill="WHITE" />
       <Button fx:id="btLogin" layoutX="144.0" layoutY="341.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Login" textFill="WHITE" />
       <Button fx:id="btVoltar" layoutX="491.0" layoutY="341.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="48.0" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Sair" textFill="WHITE" />
-      <Label layoutX="47.0" layoutY="35.0" text="Donate Solidarity" textFill="STEELBLUE">
+      <Label layoutX="47.0" layoutY="35.0" text="Doe Solidariedade" textFill="STEELBLUE">
          <font>
             <Font name="Cambria" size="36.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="238.0" fitWidth="267.0" layoutX="169.0" layoutY="82.0" pickOnBounds="true">
          <image>
-            <Image url="@../Imagens/globe-304586_960_720.png" />
+            <Image url="@../Imagens/foto1.png" />
          </image>
       </ImageView>
    </children>

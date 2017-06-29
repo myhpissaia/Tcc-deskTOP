@@ -16,17 +16,18 @@ import javafx.stage.Stage;
  *
  * @author <Leticia e Mylena>
  */
-public class TelaAdmin  extends Application { 
+public class TelaAdmin extends Application {
+
     private static Stage stage;
 
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/View/TelaAdmin.fxml"));
-        
+
         Scene scene = new Scene(root);
         stage.setTitle("Tela do Administrador");
-        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1_1.png")));
-        
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/Imagens/foto1.png")));
+
         stage.setScene(scene);
         stage.show();
         TelaAdmin.stage = stage;
@@ -38,9 +39,11 @@ public class TelaAdmin  extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-        public static Stage getStage() {
+
+    public static Stage getStage() {
         return TelaAdmin.stage;
     }
+
     public void setStage(Stage s) {
         TelaAdmin.stage = s;
     }

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaFotosController">
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="413.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaFotosController">
    <children>
       <GridPane fx:id="gridPane" layoutX="54.0" layoutY="33.0" prefHeight="307.0" prefWidth="486.0">
         <columnConstraints>
@@ -20,5 +21,10 @@
         </rowConstraints>
       </GridPane>
       <Button fx:id="btVoltar" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Voltar" textFill="WHITE" />
+      <ImageView fitHeight="56.0" fitWidth="65.0" layoutX="556.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/foto1.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

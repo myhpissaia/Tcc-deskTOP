@@ -8,26 +8,25 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="603.0" style="-fx-border-color: #4682B4; -fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaTabelaDoacaoController">
-   <children>
-      <ImageView fitHeight="377.0" fitWidth="600.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true">
-         <image>
-            <Image url="@../Imagens/gradiente-azul-claro-fundo%20(1).jpg" />
-         </image>
-      </ImageView>
-      <TableView fx:id="tabela" layoutX="31.0" layoutY="26.0" prefHeight="276.0" prefWidth="539.0" style="-fx-border-color: #4682B4;">
-        <columns>
-          <TableColumn fx:id="clnNome" prefWidth="112.0" text="Nome" />
-          <TableColumn fx:id="clnSobrenome" prefWidth="121.0" text="Sobrenome" />
-            <TableColumn fx:id="clnEmail" prefWidth="158.0" text="Email/telefone " />
-            <TableColumn fx:id="clnDoacao" prefWidth="147.0" text="Doação" />
-        </columns>
-      </TableView>
-      <Button fx:id="btVoltar" layoutX="31.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Voltar" textFill="WHITE" />
-      <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="523.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Imagens/globe-304586_960_720.png" />
-         </image>
-      </ImageView>
-   </children>
+    <children>
+        <ImageView fitHeight="377.0" fitWidth="600.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true">
+            <image>
+                <Image url="@../Imagens/gradiente-azul-claro-fundo%20(1).jpg" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tabela" layoutX="31.0" layoutY="26.0" prefHeight="276.0" prefWidth="539.0" style="-fx-border-color: #4682B4;">
+            <columns>
+                <TableColumn fx:id="clnNome" prefWidth="112.0" text="Nome" />
+                <TableColumn fx:id="clnSobrenome" prefWidth="121.0" text="Sobrenome" />
+                <TableColumn fx:id="clnEmail" prefWidth="158.0" text="Email/telefone " />
+                <TableColumn fx:id="clnDoacao" prefWidth="147.0" text="Doação" />
+            </columns>
+        </TableView>
+        <Button fx:id="btVoltar" layoutX="31.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: #4682B4; -fx-border-color: #4682B4;" text="Voltar" textFill="WHITE" />
+        <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="523.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Imagens/foto1.png" />
+            </image>
+        </ImageView>
+    </children>
 </AnchorPane>
-
