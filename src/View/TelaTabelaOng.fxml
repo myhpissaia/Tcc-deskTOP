@@ -8,8 +8,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="1095.0" style="-fx-border-color: #000000; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaTabelaOngController">
+<AnchorPane id="AnchorPane" prefHeight="647.0" prefWidth="1088.0" style="-fx-border-color:  #4682B4; -fx-background-color: #4682B4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaTabelaOngController">
    <children>
+      <ImageView fitHeight="633.0" fitWidth="1093.0" layoutX="-4.0" layoutY="-6.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/gradiente-azul-claro-fundo%20(1).jpg" />
+         </image>
+      </ImageView>
       <TableView fx:id="tabela" layoutX="14.0" layoutY="34.0" prefHeight="522.0" prefWidth="841.0" style="-fx-border-color: #4682B4;">
         <columns>
           <TableColumn fx:id="clnId" prefWidth="41.0" text="ID" />
